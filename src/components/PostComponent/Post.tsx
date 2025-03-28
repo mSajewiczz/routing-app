@@ -10,13 +10,13 @@ interface Post {
 }
 
 export default function Post({
-	userName,
-	userLastName,
-	age,
-	study,
-	profession,
-}: Post) {
-	// const userContext = useContext(PostsContext);
+	// userName,
+	// userLastName,
+	// age,
+	// study,
+	// profession,
+}) {
+	const userContext = useContext(PostsContext);
 
 	const [showInfo, setShowInfo] = useState(false);
 
@@ -28,7 +28,7 @@ export default function Post({
 		<>
 			<div className="bg-red-100 flex gap-2 flex-col">
 				<h1>
-					{userName} {userLastName}
+					{userContext.name} {userContext.last_name}
 				</h1>
 				<p>Short description</p>
 				<button className="text-start cursor-pointer" onClick={handleShowInfo}>
@@ -40,14 +40,14 @@ export default function Post({
 				<div className="absolute bg-white border w-full h-screen">
 					<div className="flex justify-between gap-2">
 						<h3>
-							More informations about {userName} {userLastName}
+							More informations about {userContext.name} {userContext.last_name}
 						</h3>
                         <button className="bg-red-400 text-white border cursor-pointer" onClick={() => setShowInfo(false)}>Close</button>
 					</div>
 
-                    <h4>Age: {age}</h4>
-					<h4>Study: {study}</h4>
-					<h4>Profession: {profession}</h4>
+                    <h4>Age: {userContext.age}</h4>
+					<h4>Study: {userContext.study}</h4>
+					<h4>Profession: {userContext.profession}</h4>
 				</div>
 			) : (
 				""

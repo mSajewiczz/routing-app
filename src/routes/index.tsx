@@ -1,4 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import NavBar from "@/components/NavBar/NavBar";
 import "../App.css";
 
 export const Route = createFileRoute("/")({
@@ -8,8 +9,7 @@ export const Route = createFileRoute("/")({
 function App() {
 	return (
 		<>
-			<h1 className="bg-red-100">Hello World</h1>
-			<Link to = "/Posts">Posts</Link>
+			<h1>Welcome in the Data Base</h1>
 		</>
 	);
 }

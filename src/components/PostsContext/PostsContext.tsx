@@ -3,7 +3,7 @@ import {createContext} from 'react';
 export const PostsContext = createContext({
     name: "",
     last_name: "",
-    age: "",
+    age: 0,
     study: "",
     profession: ""
 });
