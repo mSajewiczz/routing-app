@@ -1,0 +1,142 @@
+[
+	{
+		"name": "John",
+		"last_name": "Doe",
+		"age": 28,
+		"study": "Computer Science",
+		"profession": "Software Engineer"
+	},
+	{
+		"name": "Emma",
+		"last_name": "Smith",
+		"age": 25,
+		"study": "Business Administration",
+		"profession": "Marketing Manager"
+	},
+	{
+		"name": "Michael",
+		"last_name": "Johnson",
+		"age": 32,
+		"study": "Mechanical Engineering",
+		"profession": "Mechanical Engineer"
+	},
+	{
+		"name": "Sophia",
+		"last_name": "Brown",
+		"age": 27,
+		"study": "Psychology",
+		"profession": "Clinical Psychologist"
+	},
+	{
+		"name": "James",
+		"last_name": "Davis",
+		"age": 29,
+		"study": "Finance",
+		"profession": "Financial Analyst"
+	},
+	{
+		"name": "Olivia",
+		"last_name": "Wilson",
+		"age": 24,
+		"study": "Medicine",
+		"profession": "Doctor"
+	},
+	{
+		"name": "William",
+		"last_name": "Martinez",
+		"age": 35,
+		"study": "Civil Engineering",
+		"profession": "Civil Engineer"
+	},
+	{
+		"name": "Isabella",
+		"last_name": "Anderson",
+		"age": 26,
+		"study": "Architecture",
+		"profession": "Architect"
+	},
+	{
+		"name": "Ethan",
+		"last_name": "Thomas",
+		"age": 30,
+		"study": "Law",
+		"profession": "Lawyer"
+	},
+	{
+		"name": "Mia",
+		"last_name": "Harris",
+		"age": 23,
+		"study": "Education",
+		"profession": "Teacher"
+	},
+	{
+		"name": "Alexander",
+		"last_name": "Clark",
+		"age": 31,
+		"study": "Physics",
+		"profession": "Physicist"
+	},
+	{
+		"name": "Charlotte",
+		"last_name": "Lewis",
+		"age": 29,
+		"study": "Biology",
+		"profession": "Biologist"
+	},
+	{
+		"name": "Benjamin",
+		"last_name": "Walker",
+		"age": 34,
+		"study": "Economics",
+		"profession": "Economist"
+	},
+	{
+		"name": "Amelia",
+		"last_name": "Hall",
+		"age": 28,
+		"study": "Political Science",
+		"profession": "Policy Analyst"
+	},
+	{
+		"name": "Daniel",
+		"last_name": "Young",
+		"age": 27,
+		"study": "Electrical Engineering",
+		"profession": "Electrical Engineer"
+	},
+	{
+		"name": "Harper",
+		"last_name": "Allen",
+		"age": 26,
+		"study": "Graphic Design",
+		"profession": "Graphic Designer"
+	},
+	{
+		"name": "Matthew",
+		"last_name": "King",
+		"age": 33,
+		"study": "Environmental Science",
+		"profession": "Environmental Scientist"
+	},
+	{
+		"name": "Ella",
+		"last_name": "Wright",
+		"age": 25,
+		"study": "History",
+		"profession": "Historian"
+	},
+	{
+		"name": "David",
+		"last_name": "Scott",
+		"age": 30,
+		"study": "Information Technology",
+		"profession": "IT Specialist"
+	},
+	{
+		"name": "Grace",
+		"last_name": "Green",
+		"age": 22,
+		"study": "Sociology",
+		"profession": "Social Worker"
+	}
+]
