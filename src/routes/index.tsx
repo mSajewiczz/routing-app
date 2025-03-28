@@ -8,8 +8,8 @@ export const Route = createFileRoute("/")({
 
 function App() {
 	return (
-		<>
-			<h1>Welcome in the Data Base</h1>
-		</>
+		<div className="flex justify-center">
+			<h1 className="text-2xl p-2">Welcome in the Data Base</h1>
+		</div>
 	);
 }
