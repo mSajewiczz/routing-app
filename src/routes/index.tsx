@@ -8,8 +8,9 @@ export const Route = createFileRoute("/")({
 
 function App() {
 	return (
-		<div className="flex justify-center">
+		<div className="flex justify-center flex-col items-center">
 			<h1 className="text-2xl p-2">Welcome in the Data Base</h1>
+			<p>Here you can find many person and check their full name, age, completed study and profession!</p>
 		</div>
 	);
 }
