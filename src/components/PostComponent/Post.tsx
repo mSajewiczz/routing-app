@@ -1,5 +1,6 @@
 import { useContext, useState } from "react";
 import { PostsContext } from "../../components/PostsContext/PostsContext";
+import { createFileRoute, useParams } from "@tanstack/react-router";
 
 export default function Post() {
 	const userContext = useContext(PostsContext);

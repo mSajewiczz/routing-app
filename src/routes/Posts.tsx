@@ -1,5 +1,5 @@
 import Post from "@/components/PostComponent/Post";
-import { createFileRoute} from "@tanstack/react-router";
+import { createFileRoute, Link} from "@tanstack/react-router";
 import data from "../../database/database.json";
 import { PostsContext } from "../../src/components/PostsContext/PostsContext";
 import {useState} from "react";
@@ -7,6 +7,8 @@ import {useState} from "react";
 export const Route = createFileRoute("/Posts")({
 	component: RouteComponent,
 });
+
+
 
 const userObject = data.map((user) => (
 	{
@@ -21,6 +23,7 @@ const userObject = data.map((user) => (
 )) 
 
 function RouteComponent() {
+	
 
 	return (
 		<div className="flex flex-col gap-5 ">
