@@ -1,5 +1,4 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import NavBar from "@/components/NavBar/NavBar";
 import "../App.css";
 
 export const Route = createFileRoute("/")({

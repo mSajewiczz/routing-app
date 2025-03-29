@@ -1,7 +1,7 @@
 import Post from "@/components/PostComponent/Post";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import data from "../../database/database.json";
-import NavBar from "@/components/NavBar/NavBar";
+
 
 // import {useState} from "react";
 
@@ -33,7 +33,7 @@ const x = () => {
 function RouteComponent() {
 	return (
 		<div className="flex flex-col gap-5">
-			<h1 onClick={x} className="flex justify-center items-center text-2xl">Posts</h1>
+			<h1 onClick={x} className="flex justify-center items-center text-2xl">User data</h1>
 			<ul className="flex gap-20 flex-wrap justify-center">
 				{data.map((user) => (
 					<PostsContext.Provider value={userObject[user.id]}>
