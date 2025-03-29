@@ -6,7 +6,7 @@ export const Route = createRootRoute({
 		<>
 			<nav className="bg-amber-500 p-2 fixed w-full top-0 left-0 z-50">
 				<div className="flex items-center gap-10">
-					<h1 className="bg-amber-400 p-2 text-white">👨‍💻 User Data Base</h1>
+					<h1 className="bg-amber-400 p-2 text-white rounded-lg">👨‍💻 User Data Base</h1>
 					<div className="flex ">
 						<Link
 							to="/"

@@ -1,27 +1,13 @@
 import { useContext, useState } from "react";
 import { PostsContext } from "../../components/PostsContext/PostsContext";
 
-interface Post {
-	userName: string;
-	userLastName: string;
-	age: number;
-	study: string;
-	profession: string;
-}
-
-export default function Post({
-	// userName,
-	// userLastName,
-	// age,
-	// study,
-	// profession,
-}) {
+export default function Post() {
 	const userContext = useContext(PostsContext);
 
-	const [showInfo, setShowInfo] = useState(false);
+	const [showUserInfo, setShowUserInfo] = useState(false);
 
 	const handleShowInfo = () => {
-		setShowInfo(!showInfo);
+		setShowUserInfo(!showUserInfo);
 	};
 
 	return (
@@ -30,24 +16,53 @@ export default function Post({
 				<h1 className="text-red-600">
 					{userContext.name} {userContext.last_name}
 				</h1>
+
 				<p>{userContext.profession}</p>
-				<button className="text-start cursor-pointer bg-amber-200 p-1 rounded-sm" onClick={handleShowInfo}>
+				<button
+					className="text-start cursor-pointer bg-amber-200 p-1 rounded-sm"
+					onClick={handleShowInfo}>
 					Show more informations
 				</button>
 			</div>
 
-			{showInfo ? (
+			{showUserInfo ? (
 				<div className="fixed bg-amber-100 w-6xl h-150 p-5 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-lg">
 					<div className="flex justify-between gap-2">
 						<h3>
-							More informations about <span className="text-red-600">{userContext.name} {userContext.last_name}</span>
+							More informations about{" "}
+							<span className="text-red-600">
+								{userContext.name} {userContext.last_name}
+							</span>
 						</h3>
-                        <button className="bg-amber-400 text-white cursor-pointer px-6 py-1 rounded-sm" onClick={() => setShowInfo(false)}>Close</button>
+						<button
+							className="bg-amber-400 text-white cursor-pointer px-6 py-1 rounded-sm"
+							onClick={() => setShowUserInfo(false)}>
+							Close
+						</button>
 					</div>
 
-                    <h4>Age: {userContext.age}</h4>
-					<h4>Study: {userContext.study}</h4>
-					<h4>Profession: {userContext.profession}</h4>
+					<div className="flex items-center gap-2">
+						<img
+							className="py-2 rounded-sm"
+							src={userContext.photo}
+							alt={`Photo of ${userContext.name} ${userContext.last_name}`}
+						/>
+						<div className="flex flex-col gap-4">
+							<h4>
+								{" "}
+								<span className="text-red-600">Age:</span> {userContext.age}
+							</h4>
+							<h4>
+								{" "}
+								<span className="text-red-600">Study:</span> {userContext.study}
+							</h4>
+							<h4>
+								{" "}
+								<span className="text-red-600">Profession:</span>{" "}
+								{userContext.profession}
+							</h4>
+						</div>
+					</div>
 				</div>
 			) : (
 				""
